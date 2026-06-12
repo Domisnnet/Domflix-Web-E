@@ -438,8 +438,8 @@ body.light-mode .btn-icon {
 
 @media (max-width: 500px) {
   .container { padding: 1rem; }
-  .perfis-container { gap: 1.5rem; }
-  .perfil { width: clamp(100px, 38vw, 150px); }
+  .perfis-container { gap: 2rem; }
+  .perfil { width: clamp(100px, 38vw, 180px); }
   .nome-perfil { font-size: 1rem; }
   .carousel-item { width: 180px; height: 101px; }
 }
