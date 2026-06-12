@@ -1,27 +1,24 @@
 function toggleTheme() {
   const body = document.body;
-  body.classList.toggle('dark-mode');
   const btn = document.getElementById('theme-toggle');
-
-  if (body.classList.contains('dark-mode')) {
-    localStorage.setItem('theme', 'dark');
-    if (btn) btn.innerHTML = '☀️';
-  } else {
-    localStorage.setItem('theme', 'light');
-    if (btn) btn.innerHTML = '🌙';
-  }
+  body.classList.toggle('dark-mode');
+  const isDark = body.classList.contains('dark-mode');
+  localStorage.setItem( 'theme', isDark ? 'dark' : 'light' );
+  if (btn) { btn.textContent = isDark ? '☀️' : '🌙'; }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
   const body = document.body;
   const btn = document.getElementById('theme-toggle');
-
+  const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     body.classList.add('dark-mode');
-    if (btn) btn.innerHTML = '☀️';
+    if (btn) {
+      btn.textContent = '☀️';
+    }
   } else {
     body.classList.remove('dark-mode');
-    if (btn) btn.innerHTML = '🌙';
+    if (btn) { btn.textContent = '🌙'; }
   }
+  if (btn) { btn.addEventListener('click', toggleTheme); }
 });
