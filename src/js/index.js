@@ -17,9 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="nome-perfil">${perfil.name}</span>
           </a>
         `
-      )
-      .join('');
-
+      ) .join('');
     document.querySelectorAll('.perfil').forEach((perfil) => {
       perfil.addEventListener('click', (e) => {
         e.preventDefault(); 
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (imagem.startsWith('src/')) {
           imagem = imagem.substring(4);
         }
-
         localStorage.setItem('perfilAtivoNome', nome);
         localStorage.setItem('perfilAtivoImagem', imagem);
         window.location.href = perfil.href;

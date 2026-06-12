@@ -1,14 +1,16 @@
 {
-  "name": "domflix-plataform",
+  "name": "domflix-plattform",
   "version": "1.0.0",
   "description": "Plataforma de streaming Domflix",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server src --port=8080 --no-browser",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "live-server --port=8080 --open=index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm-run-all clean create-dirs copy:html copy:css copy:js copy:assets copy:templates",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "DomisDev",
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.2"

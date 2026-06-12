@@ -9,11 +9,6 @@ export function createCarousel(category) {
   carouselSection.appendChild(title);
   const itemsContainer = document.createElement('div');
   itemsContainer.className = 'carousel-items';
-  category.items.forEach((item) => {
-    const card = createCard(item);
-    itemsContainer.appendChild(card);
-  });
-
-  carouselSection.appendChild(itemsContainer);
-  return carouselSection;
+  category.items.forEach((item) => { const card = createCard(item); itemsContainer.appendChild(card); });
+  carouselSection.appendChild(itemsContainer); return carouselSection;
 }

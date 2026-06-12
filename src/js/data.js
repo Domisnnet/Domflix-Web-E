@@ -1,20 +1,8 @@
 export const profiles = [
-  {
-    "name": "Fabiana",
-    "img": "src/assets/1.webp"
-  },
-  {
-    "name": "Alexander",
-    "img": "src/assets/2.webp"
-  },
-  {
-    "name": "Bashira",
-    "img": "src/assets/3.webp"
-  },
-  {
-    "name": "Dominique",
-    "img": "src/assets/4.png"
-  }
+  { "name": "Fabiana", "img": "src/assets/1.webp" },
+  { "name": "Alexander", "img": "src/assets/2.webp" },
+  { "name": "Bashira", "img": "src/assets/3.webp" },
+  { "name": "Dominique", "img": "src/assets/4.png" }
 ];
 
 export const categories = [
