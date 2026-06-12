@@ -22,10 +22,8 @@ const loadTemplate = async ( templateName, targetId ) => {
   }
 };
 
-document.addEventListener(
-  'DOMContentLoaded',
-  async () => {
-    await loadTemplate( 'header.html', 'header-placeholder' );
-    await loadTemplate( 'footer.html', 'footer-placeholder' );
-  }
-);
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadTemplate('header.html', 'header-placeholder');
+  await loadTemplate('footer.html', 'footer-placeholder');
+  document.dispatchEvent( new CustomEvent('templatesLoaded') );
+});
