@@ -125,7 +125,7 @@ Se algo não estiver funcionando como esperado, não hesite em abrir um chamado:
 
 <details>
 <summary><strong>Posso utilizar este código em meu portfólio pessoal ❓</strong></summary>
-<p>🤝 <strong>Resposta:</strong> Com certeza. O projeto é <strong>Open Source</strong>. Você pode clonar, estudar a estrutura de pastas e utilizar como base para seus próprios estudos de UI, desde que mantenha a atribuição original conforme a licença MIT e dê os devidos créditos.</p>
+<p>🤝 <strong>Resposta:</strong> Com certeza. O projeto é <strong>Open Source</strong>. Você pode clonar, estudar a estrutura de pastas e utilizar como base para seus próprios estudos de UI, desde que mantenha a atribuição original conforme a licença MIT e não se esqueça de dar os devidos créditos!!.</p>
 </details>
 
 <details>
